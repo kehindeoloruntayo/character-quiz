@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/jquery-3.6.4.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="icon" href="./img/log.jpg" />
+  <title>Harry Potter Quiz</title>
+</head>
+
+<body>
+  <div class="background2">
+    <img src="./img/pexels-rdne-stock-project-7978807.jpg" alt="background">
+  </div>
+  <nav>
+    <img src="./img/lg.jpg" alt="Logo">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./characters.html">Characters</a></li>
+      <li>
+        <a href="./quiz.html">Harry Potter Quiz</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <form id="harrypotter" class="was-validated">
+      <h2>Fill the form below</h2>
+      <div class="mt-3 mb-3">
+        <label for="house" class="form-label">What house would you prefer?</label>
+        <select name="house" class="form-control" id="house" required>
+          <option value="">Select an Option</option>
+          <option value="gryffindor">Gryffindor</option>
+          <option value="slytherin">Slytherin</option>
+          <option value="hufflepuff">Hufflepuff</option>
+          <option value="ravenclaw">Ravenclaw</option>
+        </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="object" class="form-label">What object do you desire most?</label>
+        <select name="object" class="form-control" id="object" required>
+          <option value="">Select an Option</option>
+          <option value="Wand">The Elder Wand</option>
+          <option value="stone">The Philosopher's Stone</option>
+          <option value="map">The Marauder's Map</option>
+          <option value="resurrection">The Resurrection Stone</option>
+          <option value="cloak">The Cloak of Invisibility</option>
+        </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pet" class="form-label">Pick a magical creature</label>
+        <select name="pet" class="form-control" id="pet" required>
+          <option value="">Select an Option</option>
+          <option value="unicorn">Unicorn</option>
+          <option value="phoenix">Phoenix</option>
+          <option value="owl">Owl</option>
+          <option value="hippogriff">Hippogriff</option>
+        </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="potion" class="form-label">Pick a potion</label>
+        <select name="potion" id="potion" class="form-control" required>
+          <option value="">Select an Option</option>
+          <option value="luck">Felix Felicis [liquid luck]</option>
+          <option value="love">Amortentia [love potion]</option>
+          <option value="Polyjuice">Polyjuice potion</option>
+          <option value="Strengthening">Strengthening potion</option>
+        </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div>
+        <label for="place" class="form-label">Where would you like to hang out?</label>
+        <select name="place" id="place" class="form-control" required>
+          <option value="">Select an Option</option>
+          <option value="broomsticks">The Three Broomsticks</option>
+          <option value="borgin">Borgin and Burkes</option>
+          <option value="puddifoot">Madam Puddifoot's Tea Shop</option>
+          <option value="quidditch">Quality Quidditch Supplies</option>
+        </select>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree on the terms & conditions.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="profile match1">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Neville Longbottom</h4>
+      <p>You're awkward and clumsy and hate being the center of attention. But you're brave and big-hearted and people can always trust you to help them out in a bad situation.</p>
+      <img src="./img/nevile Longbottom.jpg" alt="neville longbottom">
+    </div>
+
+    <div class="profile match2">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Hermione Granger</h4>
+      <p>You're extremely intelligent and well-read. You're respectful of rules and authority but you have your own firm principles and opinions. You like to be right all the time but you're also very just, kind and empathetic.</p>
+      <img src="./img/hermione granger.jpg" alt="Hermione Granger">
+    </div>
+
+    <div class="profile match3">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Harry Potter</h4>
+      <p>You are someone who is loyal and would do anything for your friends and family. You also put the needs of other people ahead of your own. You also likely have some leadership qualities, which leads to people gravitating towards you.</p>
+      <img src="./img/harry potter.jpg" alt="harry potter">
+    </div>
+
+    <div class="profile match4">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Ron Weasley</h4>
+      <p>You are the funny one in your group of friends that is always keeping the mood up. You are also someone who would do anything to protect your family. If you would have applied yourself in school more, you would have been at the top of your class.</p>
+      <img src="./img/ron weasley.jpg" alt="ron weaasley">
+    </div>
+
+    <div class="profile match5">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Draco Malfoy</h4>
+      <p>You are someone who is very smart and possess a lot of charisma. You are also likely more of a leader instead of a follower.</p>
+      <img src="./img/draco malfoy.jpg" alt="draco malfoy">
+    </div>
+
+    <div class="profile match6">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Cedric Diggory</h4>
+      <p>You are someone with a lot of friends, who excels at whatever you do!</p>
+      <img src="./img/cedric diggory.jpg" alt="cedric diggory">
+    </div>
+
+    <div class="profile match7">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Fred & George Weasley</h4>
+      <p>You love to goof around and don't take things too seriously. If there is a practical joke pulled, you are the first person that gets blamed based on your history.</p>
+      <img src="./img/fred and george weasley.jpg" alt="fred & george weasley">
+    </div>
+    <div class="profile match8">
+      <h3>Your match is :</h3>
+      <h4 class="profileName">Luna Lovegood</h4>
+      <p>You are a very unique and creative individual.</p>
+      <img src="./img/luna lovegood.jpg" alt="luna lovegood">
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © Harry Potter Quiz 2023</p>
+  </footer>
+</body>
+
+</html>
