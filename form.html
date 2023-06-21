@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" href="./img/log.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Harry Potter Quiz</title>
+</head>
+<body>
+    <div class="background">
+        <img src="./img/pexels-rdne-stock-project-7979094.jpg" alt="background">
+    </div>    
+    <nav>
+      <img src="./img/lg.jpg" alt="Logo">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./characters.html">Characters</a></li>
+        <li>
+          <a href="./quiz.html">Harry Potter Quiz</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+        <form id="genderform" class="was-validated">
+            <div class="mb-3 mt-3">
+              <label for="uname" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Enter your full name" name="uname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mt-3 mb-3">
+              <label for="gender" class="form-label">What is your gender?</label>
+              <select name="gender" id="gender" class="form-control" required>
+                <option value="">Select an Option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                <label class="form-check-label" for="myCheck">I agree on the terms & conditions.</label>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+        </form>         
+    </div>
+    <footer>
+        <p>Harry Potter Quiz | Address | 07043741067 | kehindeoloruntayo1@gmail.com</p>
+    </footer>
+</body>
+</html>
